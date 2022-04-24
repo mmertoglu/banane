@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "942987537041",
+    "firebase_url": "https://patika-73619-default-rtdb.firebaseio.com",
+    "project_id": "patika-73619",
+    "storage_bucket": "patika-73619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942987537041:android:0e76c5257195a9fb91ad30",
+        "android_client_info": {
+          "package_name": "com.banane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942987537041-mjoga4bfkh22erpb6lelg8ee9jeg93tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8uhOXGJ7trPS9gzNh3OsRe4OXi5pkTOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942987537041-mjoga4bfkh22erpb6lelg8ee9jeg93tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942987537041:android:be37159216e86fa891ad30",
+        "android_client_info": {
+          "package_name": "com.patika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942987537041-mjoga4bfkh22erpb6lelg8ee9jeg93tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8uhOXGJ7trPS9gzNh3OsRe4OXi5pkTOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942987537041-mjoga4bfkh22erpb6lelg8ee9jeg93tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
