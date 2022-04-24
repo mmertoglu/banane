@@ -13,7 +13,8 @@ export default StyleSheet.create({
         
     },
     usertext:{
-        color:'white'
+        color:'white',
+        fontStyle:'italic'
     },
     messagetext:{
         color:'white',
