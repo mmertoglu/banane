@@ -41,6 +41,7 @@ const Messages = () => {
     },[])
     return(
         <View>
+            <Text style={styles.headertext} >Dertler</Text>
             <FlatList
             data={contentList}
             renderItem={renderMessages}
