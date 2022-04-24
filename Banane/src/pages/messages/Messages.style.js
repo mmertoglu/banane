@@ -10,6 +10,7 @@ export default StyleSheet.create({
         fontStyle:'italic'
     },
     container:{
-        flex:1
+        flex:1,
+        marginTop:20
     }
 });

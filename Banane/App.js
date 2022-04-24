@@ -35,7 +35,7 @@ function App() {
     <NavigationContainer>
       <StatusBar hidden/>
       <Stack.Navigator >
-        {!userSession? <Stack.Screen name='AuthPage' component={AuthStack} /> 
+        {!userSession? <Stack.Screen name='AuthPage' component={AuthStack} options={{headerShown:false}} /> 
         :  <Stack.Screen name='MessagesPage' component={Messages} options={{
           title:'Dertler',
           headerTitleAlign:'center',
