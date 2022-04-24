@@ -4,7 +4,7 @@ import colors from "../../../colors/colors";
 export default StyleSheet.create({
     container:{
         position:'absolute',
-        top:690,
+        top:630,
         right:20,
         borderRadius:50,
         width:60,

@@ -8,5 +8,8 @@ export default StyleSheet.create({
         marginTop:20,
         fontSize:20,
         fontStyle:'italic'
+    },
+    container:{
+        flex:1
     }
 });

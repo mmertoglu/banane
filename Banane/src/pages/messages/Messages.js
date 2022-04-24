@@ -40,8 +40,7 @@ const Messages = () => {
         })
     },[])
     return(
-        <View>
-            <Text style={styles.headertext} >Dertler</Text>
+        <View style={styles.container} >
             <FlatList
             data={contentList}
             renderItem={renderMessages}
