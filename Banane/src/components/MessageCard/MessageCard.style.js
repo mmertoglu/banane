@@ -25,7 +25,9 @@ export default StyleSheet.create({
     inner_container:{
         flexDirection:'row',
         justifyContent:'space-between',
-        
+        borderBottomWidth:1,
+        paddingBottom:2,
+        borderBottomColor:colors.lightpink    
     }
 
 })
