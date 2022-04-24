@@ -14,10 +14,10 @@ const Messages = () => {
     const [contentList,setContentList] = useState([]);
   
     const handleClose = () => {
-       isModalVisible==false? setIsModalVisible(true) : setIsModalVisible(false)
+       setIsModalVisible(!isModalVisible)
     }
     const handleSendMessage = (content) => {
-        setIsModalVisible(false)
+        setIsModalVisible(!isModalVisible)
         sendContent(content)
     }
     const sendContent = (content) =>{
@@ -30,7 +30,7 @@ const Messages = () => {
         database().ref('messages/').push(contentObject)
     }
     const renderMessages = ({item}) => <MessageCard message={item} />
-    useEffect(()=>{},[
+    useEffect(()=>{
         database()
         .ref('messages/')
         .on('value', snapshot => {
@@ -38,16 +38,16 @@ const Messages = () => {
             const parsedData = ParseContentData(contentData)
             setContentList(parsedData)
         })
-    ])
+    },[])
     return(
         <View>
             <FlatList
             data={contentList}
             renderItem={renderMessages}
             />
-            <FloatingButton iconName='plus' onPress={handleClose}  />
+             <FloatingButton iconName='plus' onPress={handleClose}  />
             <ModalComponent isVisible={isModalVisible} onClose={handleClose} onSend={handleSendMessage} />
-            <FloatingButton iconName='plus' onPress={handleClose}  />
+           
             
         </View>
     )

@@ -1,8 +1,10 @@
 import React from "react";
 import { View, Text } from 'react-native';
 import styles from './MessageCard.style'
+import { format, formatDistance, formatRelative, parseISO, subDays } from 'date-fns'
 
 const MessageCard = ({ message }) => {
+    const formatteddate = formatDistance(parseISO(message.date), new Date(), { addSuffix: true })
     return (
         <View style={styles.container} >
             <View style={styles.inner_container} >
@@ -12,7 +14,7 @@ const MessageCard = ({ message }) => {
                     : `${message.username.substring(0,8)}...`
                 
                 }</Text>
-                <Text style={styles.datetext} >{message.date}</Text>
+                <Text style={styles.datetext} >{formatteddate}</Text>
             </View>
             <Text style={styles.messagetext} >{message.text}</Text>
         </View>
