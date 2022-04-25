@@ -26,10 +26,14 @@ const Messages = () => {
             text:content,
             username : userMail.split('@')[0],
             date : new Date().toISOString(),
+            dislike : 0 
         }
         database().ref('messages/').push(contentObject)
     }
-    const renderMessages = ({item}) => <MessageCard message={item} />
+    const handleBanane = (item) => {
+        database().ref(`messages/${item.id}`).update({dislike : item.dislike +1})
+    }
+    const renderMessages = ({item}) => <MessageCard message={item} onBanane={()=> handleBanane(item)} />
     useEffect(()=>{
         database()
         .ref('messages/')
