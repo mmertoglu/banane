@@ -18,7 +18,8 @@ export default StyleSheet.create({
     },
     messagetext:{
         color:'white',
-        marginTop:5
+        marginTop:5,
+        marginBottom:5
     },
     datetext:{
         color:colors.lightpink
