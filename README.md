@@ -23,4 +23,4 @@ With this app, you can create an account and send messages to all users. If the 
 * Install React Native
 * Run on terminal 'git clone https://github.com/mmertoglu/banane.git'
 * Run on terminal npm install
-* Run npx react-native run-android/ios
+* Run npx react-native run-android
